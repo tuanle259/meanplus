@@ -4,9 +4,14 @@
  * Render the main application page
  */
 exports.renderIndex = function (req, res) {
-  res.render('modules/core/server/views/index', {
-    user: req.user || null
-  });
+  if(req.path === '/' && !req.user){
+    res.redirect('/signin');
+  }else{
+    res.render('modules/core/server/views/index', {
+      user: req.user
+    });
+  }
+
 };
 
 /**

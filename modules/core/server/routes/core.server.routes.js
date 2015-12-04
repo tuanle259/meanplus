@@ -14,6 +14,9 @@ module.exports = function (app) {
   app.route('/signup').get(core.renderPublic);
   app.route('/signin').get(core.renderPublic);
   app.route('/forgot').get(core.renderPublic);
+  //app.route('/').get(core.renderPublic);
+
+
   app.route('/*').get(core.renderIndex);
 
 };
