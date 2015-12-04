@@ -15,7 +15,7 @@ exports.renderIndex = function (req, res) {
 
 exports.renderSignup = function (req, res) {
   res.render('modules/core/server/views/signup', {
-    user: null
+    user: req.user || null
   });
 };
 
