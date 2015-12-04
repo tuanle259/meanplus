@@ -10,11 +10,11 @@ exports.renderIndex = function (req, res) {
 };
 
 /**
- * Render the signup page
+ * Render the public pages
  */
 
-exports.renderSignup = function (req, res) {
-  res.render('modules/core/server/views/signup', {
+exports.renderPublic = function (req, res) {
+  res.render('modules/core/server/views/public', {
     user: req.user || null
   });
 };
