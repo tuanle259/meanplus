@@ -10,6 +10,16 @@ exports.renderIndex = function (req, res) {
 };
 
 /**
+ * Render the signup page
+ */
+
+exports.renderSignup = function (req, res) {
+  res.render('modules/core/server/views/signup', {
+    user: null
+  });
+};
+
+/**
  * Render the server error page
  */
 exports.renderServerError = function (req, res) {

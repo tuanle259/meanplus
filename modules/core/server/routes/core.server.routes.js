@@ -11,5 +11,7 @@ module.exports = function (app) {
   app.route('/:url(api|modules|lib)/*').get(core.renderNotFound);
 
   // Define application route
+  app.route('/signup').get(core.renderSignup);
   app.route('/*').get(core.renderIndex);
+
 };
