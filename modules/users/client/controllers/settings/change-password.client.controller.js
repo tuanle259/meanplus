@@ -15,13 +15,16 @@ angular.module('users').controller('ChangePasswordController', ['$scope', '$http
         return false;
       }
 
+
+
       $http.post('/api/users/password', $scope.passwordDetails).success(function (response) {
         // If successful show success message and clear form
         $scope.$broadcast('show-errors-reset', 'passwordForm');
         $scope.success = true;
         $scope.passwordDetails = null;
+        $scope.message = $scope.message = {type:'success',title:'Success',message:'Password changed.'};
       }).error(function (response) {
-        $scope.error = response.message;
+        $scope.message = $scope.message = {type:'danger',title:'Error',message:response.message};
       });
     };
   }

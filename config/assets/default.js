@@ -32,8 +32,10 @@ module.exports = {
     js: [
       'modules/core/client/app/config.js',
       'modules/core/client/app/init.js',
+      //'modules/core/client/js/AdminLTE.js',
       'modules/*/client/*.js',
-      'modules/*/client/**/*.js'
+      'modules/*/client/**/*.js',
+      'modules/core/client/directives/bootstrap-modal.js',
     ],
     views: ['modules/*/client/views/**/*.html'],
     templates: ['build/templates.js']

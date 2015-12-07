@@ -111,7 +111,8 @@ module.exports = function (grunt) {
         csslintrc: '.csslintrc'
       },
       all: {
-        src: [defaultAssets.client.css,"!modules/core/client/css/AdminLTE.css"]
+        // let's skim csslint for adminlte css files
+        src: [defaultAssets.client.css,"!modules/core/client/css/AdminLTE.css","!modules/core/client/css/all-skins.css"]
       }
     },
     ngAnnotate: {

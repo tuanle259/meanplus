@@ -1,0 +1,15 @@
+body{
+    background-color: #ecf0f5;
+}
+
+/** footer always at the bottom **/
+#content {
+    padding-bottom:100px; /* estimate height of the footer element */
+}
+
+footer {
+    width: 100%;
+    position:absolute;
+    bottom:0;
+    left:0;
+}
