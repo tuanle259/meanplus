@@ -22,9 +22,9 @@ angular.module('users').controller('ChangePasswordController', ['$scope', '$http
         $scope.$broadcast('show-errors-reset', 'passwordForm');
         $scope.success = true;
         $scope.passwordDetails = null;
-        $scope.message = $scope.message = {type:'success',title:'Success',message:'Password changed.'};
+        $scope.message = $scope.message = { type:'success',title:'Success',message:'Password changed.' };
       }).error(function (response) {
-        $scope.message = $scope.message = {type:'danger',title:'Error',message:response.message};
+        $scope.message = $scope.message = { type:'danger',title:'Error',message:response.message };
       });
     };
   }

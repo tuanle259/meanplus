@@ -22,7 +22,7 @@ angular.module('core').controller('HeaderController', ['$scope', '$state', 'Auth
 
 
     $scope.toggleSidebar = function () {
-      var body = angular.element(document.querySelector("body"));
+      var body = angular.element(document.querySelector('body'));
 
       ////Enable sidebar push menu
       var screenSizes = {

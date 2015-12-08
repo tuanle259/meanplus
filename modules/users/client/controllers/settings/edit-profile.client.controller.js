@@ -20,10 +20,10 @@ angular.module('users').controller('EditProfileController', ['$scope', '$http', 
         $scope.$broadcast('show-errors-reset', 'userForm');
 
         $scope.success = true;
-        $scope.message = $scope.message = {type:'success',title:'Success',message:'Profile Updated.'};
+        $scope.message = $scope.message = { type:'success',title:'Success',message:'Profile Updated.' };
         Authentication.user = response;
       }, function (response) {
-        $scope.message = $scope.message = {type:'danger',title:'Error',message:response.data.message};
+        $scope.message = $scope.message = { type:'danger',title:'Error',message:response.data.message };
       });
     };
   }

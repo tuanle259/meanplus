@@ -16,16 +16,17 @@ angular.module('core').directive('alertui', function() {
     link: function($scope, element, attrs) {
       $scope.getIcon = function(type) {
         var icon = {
-            danger: 'ban',
-            info : 'info',
-            warning: 'warning',
-            success: 'check'
-        }
-       return icon[type];
-      },
-        $scope.close = function() {
-          $scope.message = null;
-        }
+          danger: 'ban',
+          info : 'info',
+          warning: 'warning',
+          success: 'check'
+        };
+        return icon[type];
+      };
+
+      $scope.close = function() {
+        $scope.message = null;
+      };
     }
   };
 });
