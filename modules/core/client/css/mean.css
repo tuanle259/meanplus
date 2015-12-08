@@ -2,6 +2,10 @@ body{
     background-color: #ecf0f5;
 }
 
+.sidebar-menu .treeview-menu {
+    display: block;
+}
+
 /** footer always at the bottom **/
 #content {
     padding-bottom:100px; /* estimate height of the footer element */

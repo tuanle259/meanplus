@@ -4,10 +4,10 @@
 A meanjs 4.2 forked but with admin dashboard template -- [AdminLTE](https://almsaeedstudio.com/)
 
 ## TODOs
-1. login page
-2. dashboard
+1. ~~login page~~
+2. ~~dashboard~~
 3. work with generator
-4. sidebar menu
+4. ~~sidebar menu~~
 5. fix css issues of adminlte.css
 
 ## Screenshots
