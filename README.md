@@ -12,8 +12,12 @@ A meanjs 4.2 forked but with admin dashboard template -- [AdminLTE](https://alms
 
 ## Screenshots
 
-### Signup Page
-![Signup page](http://webninjamobile.github.io/images/readme/mean-signup.gif)
+![Signup page](http://webninjamobile.github.io/images/readme/ss_meanplus/1.png)
+![Sigin page](http://webninjamobile.github.io/images/readme/ss_meanplus/2.png)
+![Dashboard page](http://webninjamobile.github.io/images/readme/ss_meanplus/3.png)
+![Profile page](http://webninjamobile.github.io/images/readme/ss_meanplus/4.png)
+![Social page](http://webninjamobile.github.io/images/readme/ss_meanplus/5.png)
+![Password page](http://webninjamobile.github.io/images/readme/ss_meanplus/6.png)
 
 ## Credits
 Meanjs.org [http://meanjs.org/](http://meanjs.org/)
