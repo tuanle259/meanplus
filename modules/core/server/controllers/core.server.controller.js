@@ -4,7 +4,7 @@
  * Render the main application page
  */
 exports.renderIndex = function (req, res) {
-  if(req.path === '/' && !req.user){
+  if(!req.user){
     res.redirect('/signin');
   }else{
     res.render('modules/core/server/views/index', {
