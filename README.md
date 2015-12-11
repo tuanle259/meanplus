@@ -9,6 +9,8 @@ A meanjs 4.2 forked but with admin dashboard template -- [AdminLTE](https://alms
 3. work with generator
 4. ~~sidebar menu~~
 5. fix css issues of adminlte.css
+6. password reset testing and layout
+7. social accounts testing and layout
 
 ## Screenshots
 
