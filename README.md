@@ -3,6 +3,9 @@
 # About
 A meanjs 4.2 forked but with admin dashboard template -- [AdminLTE](https://almsaeedstudio.com/)
 
+Please note that the homepage is the new "dashboard page" and requires authentication.
+
+
 	$ git clone https://github.com/webninjamobile/meanplus.git
 	$ cd meanplus
 	$ npm install
@@ -16,6 +19,11 @@ A meanjs 4.2 forked but with admin dashboard template -- [AdminLTE](https://alms
 5. fix css issues of adminlte.css
 6. password reset testing and layout
 7. social accounts testing and layout
+
+## Issues
+1. CSS Lint errors in adminlte css files
+2. no slide animation when opening/closing the sidebar
+
 
 ## Screenshots
 
