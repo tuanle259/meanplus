@@ -3,6 +3,11 @@
 # About
 A meanjs 4.2 forked but with admin dashboard template -- [AdminLTE](https://almsaeedstudio.com/)
 
+	$ git clone https://github.com/webninjamobile/meanplus.git
+	$ cd meanplus
+	$ npm install
+	$ grunt
+
 ## TODOs
 1. ~~login page~~
 2. ~~dashboard~~
