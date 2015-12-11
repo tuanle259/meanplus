@@ -3,7 +3,7 @@
 # About
 A meanjs 4.2 forked but with admin dashboard template -- [AdminLTE](https://almsaeedstudio.com/)
 
-Please note that the homepage is the new "dashboard page" and requires authentication.
+Please note that the dashboard is the new "home page" and requires authentication.
 
 
 	$ git clone https://github.com/webninjamobile/meanplus.git
