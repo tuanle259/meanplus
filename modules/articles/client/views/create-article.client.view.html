@@ -1,28 +1,42 @@
-<section ng-controller="ArticlesController">
-  <div class="page-header">
+<div id="content" ng-controller="ArticlesController">
+  <!-- Content Header (Page header) -->
+  <section class="content-header">
     <h1>New Article</h1>
-  </div>
-  <div class="col-md-12">
-    <form name="articleForm" class="form-horizontal" ng-submit="create(articleForm.$valid)" novalidate>
-      <fieldset>
-        <div class="form-group" show-errors>
-          <label for="title">Title</label>
-          <input name="title" type="text" ng-model="title" id="title" class="form-control" placeholder="Title" required>
-          <div ng-messages="articleForm.title.$error" role="alert">
-            <p class="help-block error-text" ng-message="required">Article title is required.</p>
+  </section>
+
+  <!-- Main content -->
+  <section class="content">
+
+    <!-- Default box -->
+    <div class="box box-success">
+      <div class="box-header with-border">
+        <h3 class="box-title">Create New</h3>
+      </div>
+      <form data-ng-submit="create()" novalidate>
+        <div data-ng-show="error" class="box-body">
+          <div class="alert alert-danger alert-dismissible">
+            <button aria-hidden="true" data-dismiss="alert" class="close" type="button">×</button>
+            <h4><i class="icon fa fa-ban"></i> Error</h4>
+            <strong data-ng-bind="error"></strong>
           </div>
         </div>
-        <div class="form-group">
-          <label for="content">Content</label>
-          <textarea name="content" ng-model="content" id="content" class="form-control" cols="30" rows="10" placeholder="Content"></textarea>
+        <div class="box-body">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" data-ng-model="name" class="form-control"
+                   placeholder="Name">
+          </div>
         </div>
-        <div class="form-group">
-          <input type="submit" class="btn btn-default">
+        <div class="box-footer">
+          <input type="submit" class="btn btn-success" value="Submit" />
         </div>
-        <div ng-show="error" class="text-danger">
-          <strong ng-bind="error"></strong>
-        </div>
-      </fieldset>
-    </form>
-  </div>
-</section>
+        <!-- /.box-footer-->
+      </form>
+
+
+    </div>
+    <!-- /.box -->
+
+  </section>
+  <!-- /.content -->
+</div>

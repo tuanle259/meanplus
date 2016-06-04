@@ -1,0 +1,35 @@
+<ul class="sidebar-menu"  ng-controller="NavController">
+    <li class="header">MAIN NAVIGATION</li>
+    <li  ui-sref-active="active">
+        <a ui-sref="home">
+            <i class="fa fa-dashboard" ></i> <span>{{state.current.name}} Dashboard</span> <i class="fa fa-angle-right pull-right"></i>
+        </a>
+    </li>
+    <li ui-sref-active="active" ng-repeat="item in menu.items | orderBy: 'position'"
+        ng-if="item.shouldRender(authentication.user);" ng-switch="item.type" class="{{item.class}} treeview"
+            >
+        <a href="" ng-if="item.type === 'dropdown'" ng-click="toggleTreeClass($index)">
+            <span>{{::item.title}}</span>
+            <i class="fa fa-angle-right pull-right"></i>
+        </a>
+        <a ng-if="item.type === 'item'"ui-sref="{{item.state}}">{{item.title}}<i class="fa fa-angle-right pull-right"></i></a>
+        <ul class="treeview-menu" ng-class="isTreeOpened[$index]">
+            <li ng-repeat="subitem in item.items | orderBy: 'position'"
+                ng-if="subitem.shouldRender(authentication.user);" ui-sref-active="active">
+                <a ui-sref="{{subitem.state}}" ng-bind="subitem.title"></a>
+            </li>
+        </ul>
+    </li>
+    <li class="treeview"  ui-sref-active="active">
+        <a ui-sref="settings">
+            <i class="fa fa-laptop"></i>
+            <span>User Profile</span>
+            <i class="fa fa-angle-right pull-right"></i>
+        </a>
+        <ul class="treeview-menu tree-active">
+            <li ui-sref-active="active"><a ui-sref="settings.profile"><i class="fa fa-circle-o"></i> Update Profile</a></li>
+            <!--<li ui-sref-active="active"><a ui-sref="settings.accounts"><i class="fa fa-circle-o"></i> Manage Social Accounts</a></li>-->
+            <li ui-sref-active="active"><a ui-sref="settings.password"><i class="fa fa-circle-o"></i> Change Password</a></li>
+        </ul>
+    </li>
+</ul>
